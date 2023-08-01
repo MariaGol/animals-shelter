@@ -1,0 +1,111 @@
+
+.pets {
+    background-color: $darkbackground;
+    .pets-wrapper {
+        // min-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        @include media ('<=phone') {
+            padding-top: 42px;
+        }
+    }
+    &__header {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $lightgrey;
+        // min-width: 400px;
+        padding-bottom: 40px;
+        @include media ('<=phone') {
+            font-size: 25px;
+        }
+    }
+    &__line-1 {
+        margin-top: 20px;
+        @include media ('<=phone') {
+            margin-top: 31px;
+        }
+        .carousel__cards {
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+    &__line-2 {
+        margin-top: 54px;
+        @include media ('<=phone') {
+            display: none;
+        }
+        .carousel__cards {
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+    &__line-1 .carousel__cards, &__line-2 .carousel__cards {
+        @include media ('<=tablet') {
+            flex-wrap: wrap;
+            gap: 52px;
+        }
+    }
+    .card-odd {
+        display: flex;
+        gap: 30px;
+        @include media ('<=tablet') {
+            display: none;
+        }
+    }
+    h1.pets__header {
+        @include media ('<=tablet') {
+        padding-bottom: 10px;
+        }
+    }
+    &__scroll {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 81px;
+        margin-bottom: 100px;
+        @include media ('<=tablet') {
+            margin-bottom: 75px;
+            margin-top: 68px;
+        }
+        @include media ('<=phone') {
+            margin-bottom: 40px;
+            margin-top: 72px;
+            gap: 10px;
+        }
+        .round1, .round2, .round3, .round4, .round5 {
+            width: 52px;
+            height: 52px;
+            border-radius: 100px;
+            border: 2px solid $subtitle;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .round3 {
+            background-color: $primary;
+            border: none;
+            color: $dark-3xl;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+        }
+        .round4, .round5 {
+            border: 2px solid $primary;
+        }
+    }
+}
+
+.card__sofia {
+    @include media ('<=phone') {
+        display: none;
+    }
+}

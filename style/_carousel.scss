@@ -1,0 +1,139 @@
+.carousel {
+    background-color: $darkbackground;
+    .carousel-wrapper {
+        // min-width: 1200px;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 20px;
+        @include media ('<=tablet') {
+            margin-right: 18px;
+        }
+        @include media ('<=phone') {
+            padding-top: 42px;
+            gap: 40px;
+        }
+    }
+    &__header {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $lightgrey;
+        @include media ('<=phone') {
+            font-size: 25px;
+            margin-left: -4px;
+
+        }
+    }
+    &__cards {
+        display: flex;
+        gap: 90px;
+        @include media ('<=tablet') {
+            gap: 40px;
+        }
+    }
+    &__button {
+        text-decoration: none;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: $dark-3xl;
+        background-color: $primary;
+        border-radius: 100px;
+        padding: 15px 45px;
+        margin-top: 28px;
+        margin-bottom: 100px;
+        @include media ('<=phone') {
+            margin-top: 100px;
+            margin-bottom: 42px;
+        }
+    }
+}
+
+//карточка питомца
+.card {
+    background-color: $lightbackground;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__name {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $lightgrey;
+    }
+    &__button {
+        text-decoration: none;
+        display: inline-block;
+        align-self: center;
+        padding: 15px 45px;
+        border-radius: 100px;
+        white-space: nowrap;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: $dark-3xl;
+        letter-spacing: 0.06em;
+        border: solid $primary 3px;
+        }
+}
+
+
+.arrowRight, .arrowLeft {
+    position: relative;
+
+}
+.arrowRight {
+    top: 190px;
+    right: 39px;
+    @include media ('<=tablet') {
+        right: 29px;
+    }
+    @include media ('<=phone') {
+        top: 456px;
+        left: -136px;
+    }
+}
+.arrowLeft {
+    top: 190px;
+    right: -35px;
+    @include media ('<=tablet') {
+        right: -26px;
+    }
+    @include media ('<=phone') {
+        top: 456px;
+        left: 133px;
+    }
+}
+
+.card__woody {
+    @include media ('<=tablet') {
+        display: none;
+    }
+}
+
+.card__jen {
+    @include media ('<=phone') {
+        display: none;
+    }
+}
+

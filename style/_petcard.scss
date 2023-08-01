@@ -1,0 +1,76 @@
+.modal-window {
+    max-width: 952px;
+    height: 552px;
+    background-color: $white;
+    position: relative;
+    &__closebtn {
+        position: absolute;
+        left: 900px;
+    }
+    .modal-wrapper {
+        max-width: 900px;
+        height: 500px;
+        background-color: $lightbackground;
+        display: flex;
+        position: absolute;
+        top: 52px;
+        border-radius: 10px;
+    }
+    
+    &__image {
+        flex-basis: 50%;
+        img {
+            object-fit: contain;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        padding-top: 50px;
+        &__name {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: $black;
+        }
+        &__breed {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+            color: $black;
+            padding-top: 10px;
+        }
+        &__about {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+            color: $black;
+            padding-top: 40px;
+        }
+        &__list {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+            color: $black;
+            padding-top: 40px;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            li {
+            }
+        }
+    }
+}

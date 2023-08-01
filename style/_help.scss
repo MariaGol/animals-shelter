@@ -1,0 +1,124 @@
+.help {
+
+    &__header {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $lightgrey;
+        width: 320px;
+        @include media ('<=phone') {
+            font-size: 25px;
+            width: 260px;
+        }
+        @include media ('<=tablet') {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__first {
+        display: flex;
+        width: 1027px;
+        justify-content: space-between;
+        @include media ('<=tablet') {
+            // width: auto;
+            // gap: 60px;
+            flex-wrap: wrap;
+            width: 785px;
+            // margin-bottom: 30px;
+            justify-content: flex-start;
+        }
+        @include media ('<=phone') {
+            width: 263px;
+        }
+        
+        &__box1, &__box2, &__box3, &__box4, &__box5 {
+            
+            flex-direction: column;
+            height: 113px;
+            text-align: center;
+            @include media ('<=tablet') {
+                height: none;
+                width: 256px;
+                margin-bottom: 55px;
+            }
+            @include media ('<=phone') {
+                width: 80px;
+                margin-right: 50px;
+            }
+            
+            p {
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 115%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: $lightgrey;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    &__second {
+        display: flex;
+        width: 1027px;
+        justify-content: space-around;
+        @include media ('<=tablet') {
+            // width: auto;
+            // gap: 60px;
+            flex-wrap: wrap;
+            width: 808px;
+            justify-content: flex-start;
+
+        }
+        &__box6, &__box7, &__box8, &__box9 {
+            
+            flex-direction: column;
+            height: 113px;
+            text-align: center;
+            @include media ('<=tablet') {
+                height: none;
+                width: 256px;
+                margin-bottom: 55px;
+            }
+            @include media ('<=phone') {
+                width: 80px;
+                margin-right: 50px;
+            }
+            p {
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 115%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: $lightgrey;
+                padding-top: 30px;
+            }
+        }
+    }
+}
+
+.help-wrapper {
+    // min-width: 1200px;
+    display: flex;
+    gap: 55px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 76px;
+    padding-bottom: 104px;
+    padding-left: 20px;
+    @include media ('<=phone') {
+        padding-top: 42px;
+        padding-left: 0;
+    }
+    @include media ('<=tablet') {
+        gap: 0;
+    }
+}

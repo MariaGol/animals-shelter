@@ -1,0 +1,166 @@
+
+.footer {
+    background: url(../images/footer-gradient-background.png) no-repeat;
+    background-size: cover;
+      .footer-wrapper {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 40px;
+          margin: 0 40px;
+          @include media ('<=tablet') {
+            flex-wrap: wrap;
+            padding-top: 13px;
+            margin: 0 56px;
+            }
+            @include media ('<=phone') {
+                margin: 0 26px;
+                }
+      }
+    &__image {
+        @include media ('<=tablet') {
+            padding-left: 178px;
+            padding-top: 62px;
+            }
+            @include media ('<=phone') {
+                padding-top: 20px;
+                margin-left: -42px;
+                padding-left: 0;
+                }
+        img {
+            @include media ('<=phone') {
+                width: 89%;
+                padding-left: 34px;
+                padding-top: 15px;
+                }
+        }
+    }
+     &__text1 {
+         display: flex;
+         flex-direction: column;
+         gap: 40px;
+         width: 280px;
+         padding-top: 16px;
+         @include media ('<=tablet') {
+            gap: 35px;
+            margin-left: 8px;
+            }
+         &__h1 {
+             font-family: 'Georgia';
+             font-style: normal;
+             font-weight: 400;
+             font-size: 35px;
+             line-height: 130%;
+             color: white;
+             letter-spacing: 0.06em;
+            //  @include titleFontSize;
+            @include media ('<=phone') {
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: 0.06em;
+            }
+         }
+         &__box1 {
+             display: flex;
+             gap: 20px;
+             p {
+                 color: $primary;
+                 font-family: 'Georgia';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 20px;
+                 line-height: 115%;
+             }
+         }
+         &__box2 {
+             display: flex;
+             gap: 20px;
+             p {
+                 color: $primary;
+                 font-family: 'Georgia';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 20px;
+                 line-height: 115%;
+             }
+         }
+     }
+     &__text2 {
+         display: flex;
+         flex-direction: column;
+         gap: 40px;
+         width: 310px;
+         padding-top: 16px;
+         @include media ('<=tablet') {
+            gap: 35px;
+            }
+        @include media ('<=phone') {
+            gap: 42px;
+            }
+         &__h1 {
+             font-family: 'Georgia';
+             font-style: normal;
+             font-weight: 400;
+             font-size: 35px;
+             line-height: 45px;
+             letter-spacing: 0.06em;
+             color: white;
+             @include media ('<=phone') {
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: 0.06em;
+                padding-top: 35px;
+
+            }
+         }
+         &__box1 {
+             display: flex;
+             gap: 20px;
+             img {
+                 object-fit: contain;
+             }
+             p {
+                 color: $primary;
+                 font-family: 'Georgia';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 20px;
+                 line-height: 115%;
+                //  @include media ('<=phone') {
+                //     line-height: 23px;
+                //     letter-spacing: 0.06em;
+                //     font-size: 17px;
+                // }
+             }
+         }
+         &__box2 {
+             display: flex;
+             gap: 20px;
+             img {
+                 object-fit: contain;
+
+             }
+             }
+             p {
+                 color: $primary;
+                 font-family: 'Georgia';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 20px;
+                 line-height: 115%;
+                 @include media ('<=phone') {
+                    line-height: 23px;
+                    letter-spacing: 0.06em;
+                    font-size: 17px;
+                }
+             }
+         }
+     }
+

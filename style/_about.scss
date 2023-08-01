@@ -1,0 +1,85 @@
+.about {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    @include media ('<=tablet') {
+        justify-content: center;
+        align-items: center;
+    }
+    @include media ('<=phone') {
+        margin-top: 42px;
+        margin-left: 25px;
+        margin-right: 26px;
+        margin-bottom: 42px;
+    }
+}
+
+.about-wrapper {
+    display: flex;
+    flex-grow: 1;
+    // min-width: 1200px;
+    align-self: center;
+    @include media ('<=tablet') {
+        flex-direction: column-reverse;
+        flex-grow: none;
+    }
+}
+
+.about-pets {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    @include media ('<=tablet') {
+        flex-basis: none;
+    }
+    img {
+        transform: translateX(44px);
+        @include media ('<=tablet') {
+            margin-top: 79px;
+            margin-left: -86px;
+        }
+        // ИЛИ margin-left: 215px; но тогда надо отключить флекс
+        @include media ('<=phone') {
+            margin-top: 36px;
+            margin-left: -89px;
+            width: 97%;
+        }
+    }
+}
+
+.about-text {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    @include media ('<=tablet') {
+        margin-left: 169px;
+    }
+    @include media ('<=tablet') {
+        margin-left: 0px;
+    }
+    &__header {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: $lightgrey;
+        max-width: 370px;
+        @include media ('<=phone') {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    &__subheader {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: $grey;
+        max-width: 430px;
+    }
+}
